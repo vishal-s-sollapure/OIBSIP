@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: #061a40;
+    line-height: 1.6;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 25px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+    color: #00e5ff;
+}
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 120px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #061a40,
+        #004aad,
+        #00bfff
+    );
+}
+
+
+.welcome {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+    color: #00e5ff;
+}
+
+
+.hero-text {
+    max-width: 700px;
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.primary-btn {
+    background: white;
+    color: #0052cc;
+}
+
+
+.primary-btn:hover {
+    transform: translateY(-4px);
+    background: #e8faff;
+}
+
+
+.secondary-btn {
+    color: white;
+    border: 2px solid white;
+}
+
+
+.secondary-btn:hover {
+    background: white;
+    color: #0052cc;
+    transform: translateY(-4px);
+}
+
+.section {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+
+.section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.section > p {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.about {
+    background: #081f4d;
+}
+
+
+.about p {
+    color: #d9e8ff;
+    font-size: 17px;
+}
+
+.services {
+    background: #06245c;
+}
+
+
+.service-container {
+    max-width: 1100px;
+    margin: 50px auto 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.service-card {
+    width: 300px;
+    padding: 35px 25px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: 0.3s;
+}
+
+
+.service-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+
+.service-card p {
+    color: #d9e8ff;
+}
+
+.contact {
+    background: #041631;
+}
+
+
+.contact p {
+    color: #d9e8ff;
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #06152f;
+    color: white;
+}
+
+.footer-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #00d9ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+    nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .about-section {
+        padding: 70px 20px;
+    }
+
+    .contact-section {
+        padding: 70px 20px;
+    }
+}
